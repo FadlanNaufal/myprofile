@@ -1,0 +1,140 @@
+$bg_primary : #0C0C0C;
+$bg_secondary : #171717;
+$bg_green : #079211;
+$font_white : #FFFFFF;
+$font_grey : #9E9E9E;
+
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    background-color: $bg_primary;
+    color: $font_white;
+}
+
+.bg-primary-new {
+    background-color: $bg_primary;
+}
+
+.navbar {
+    .navbar-brand {
+      font-size: 18px;
+      font-weight: 500;
+      color: $bg_green;
+      &:hover {
+        color: $font_white;
+        }
+    }
+}
+.navbar-light {
+    .navbar-nav {
+      .nav-link {
+        color: $font_white;
+        &.active {
+        //   font-weight: 600;
+        }
+        &:hover {
+            color: $bg_green;
+            text-decoration: none;
+        }
+      }
+    }
+  }
+
+.section-hero{
+    .hero-text{
+        margin-top: 100px;
+        .hero-title{
+            font-size: 50px;
+            line-height: 1.3;
+        }
+        .hero-subtitle{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+.section-my-work {
+    margin-top: 50px;
+    .section-title{
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .work-item {
+        // cursor: pointer;
+        background-color: $bg_secondary;
+        .item-link {
+            text-decoration: none;
+        }
+        .work-image {
+            img {
+                max-width: 100%;
+            }
+        }
+        .work-text {
+            padding: 30px 20px;
+            .work-title{
+                margin-bottom: 10px;
+                font-size: 20px;
+                letter-spacing: 1.4px;
+                color: $font_white;
+            }
+            .work-detail{
+                color: $font_grey; 
+            }
+        }
+    }
+}
+
+.section-exploration {
+    margin-top: 50px;
+    .section-title{
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .explore-image {
+        max-width: 100%;
+    }
+}
+
+.section-contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .section-title{
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .item-link{
+        text-decoration: none;
+        .contact-item {
+            cursor: pointer;
+            border: 1px solid $font_white;
+            padding: 20px;
+            &:hover {
+                background-color: $bg_green;
+                border: 1px solid $bg_primary;
+            }
+            .contact-title {
+                color: $font_white;
+                font-size: 18px;
+                margin-bottom: 10px;
+                letter-spacing: 1.4px;
+            }
+            .contact-subtitle {
+                color: $font_grey;
+            }
+        }
+    }
+}
